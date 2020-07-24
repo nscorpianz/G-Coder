@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>G-CODER</title>
 </head>
 
 <body>
@@ -50,67 +50,72 @@
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
             <div class="mx-2">
-                <button class="btn btn-danger my-2 my-sm-0" data-toggle="modal" data-target="#signInModal">signIn</button>
-                <button class="btn btn-primary my-2 my-sm-0" data-toggle="modal" data-target="#signUpModal">singnUp</button>
+                <button class="btn btn-danger my-2 my-sm-0" data-toggle="modal"
+                    data-target="#signInModal">signIn</button>
+                <button class="btn btn-primary my-2 my-sm-0" data-toggle="modal"
+                    data-target="#signUpModal">singnUp</button>
             </div>
         </div>
     </nav>
 
-   
-  <!-- Modal -->
-  <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-            <form>
-                <div class="form-group">
-                  <label for="emailtxt">Email address</label>
-                  <input type="email" class="form-control" id="emailtxt" aria-describedby="emailHelp">
-                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+
+    <!-- Modal -->
+    <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <div class="form-group">
-                  <label for="passwordtxt">Password</label>
-                  <input type="password" class="form-control" id="passwordtxt">
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="emailtxt">Email address</label>
+                            <input type="email" class="form-control" id="emailtxt" aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordtxt">Password</label>
+                            <input type="password" class="form-control" id="passwordtxt">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberme">
+                            <label class="form-check-label" for="rememberme">Remember me</label>
+                        </div>
+                    </form>
+                    <button type="submit" class="btn btn-success" onclick=alert("hello")>Submit</button>
                 </div>
-                <div class="form-group form-check">
-                  <input type="checkbox" class="form-check-input" id="rememberme">
-                  <label class="form-check-label" for="rememberme">Remember me</label>
-                </div>
-              </form>
-              <button type="submit" class="btn btn-success" onclick=alert("hello")>Submit</button>
-        </div>
-        <!-- <div class="modal-footer">
+                <!-- <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary">Save changes</button>
         </div> -->
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Registration</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Registration</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
     </div>
-  </div>
 
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade " data-ride="carousel">
         <ol class="carousel-indicators">
@@ -163,7 +168,8 @@
     <div class="container my-4">
         <div class="row mb-2">
             <div class="col-md-6">
-                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
                         <strong class="d-inline-block mb-2 text-primary">World</strong>
                         <h3 class="mb-0">Fast & Furious</h3>
@@ -172,13 +178,14 @@
                         <a href="#" class="stretched-link">Continue reading</a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img src="img/thumb/photo-1477579266593-ccd7841e4f02.jpeg" class="bd-placeholder-img" width="200"
-                            height="250">
+                        <img src="img/thumb/photo-1477579266593-ccd7841e4f02.jpeg" class="bd-placeholder-img"
+                            width="200" height="250">
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
                         <strong class="d-inline-block mb-2 text-success">Designing Technique</strong>
                         <h3 class="mb-0">Ninja Moves</h3>
@@ -188,13 +195,14 @@
                         <a href="#" class="stretched-link">Continue reading</a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img src="img/thumb/photo-1581276879432-15e50529f34b.jpeg" class="bd-placeholder-img" width="200"
-                            height="250">
+                        <img src="img/thumb/photo-1581276879432-15e50529f34b.jpeg" class="bd-placeholder-img"
+                            width="200" height="250">
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
                         <strong class="d-inline-block mb-2 text-primary">World</strong>
                         <h3 class="mb-0">Fast & Furious</h3>
@@ -209,7 +217,8 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
                         <strong class="d-inline-block mb-2 text-success">Designing Technique</strong>
                         <h3 class="mb-0">Ninja Moves</h3>
@@ -219,8 +228,8 @@
                         <a href="#" class="stretched-link">Continue reading</a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img src="img/thumb/photo-1476170434383-88b137e598bb.jpeg" class="bd-placeholder-img" width="200"
-                            height="250">
+                        <img src="img/thumb/photo-1476170434383-88b137e598bb.jpeg" class="bd-placeholder-img"
+                            width="200" height="250">
                     </div>
                 </div>
             </div>
